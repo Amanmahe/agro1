@@ -1,0 +1,61 @@
+{% extends 'basic.html' %}
+{% block title%}AGRILAND{% endblock %}
+{% block css %}
+.agri{
+font-size: 50px
+}
+@media (max-width: 1055px){
+.col-xs-3{
+margin-right:90px;
+}
+}
+
+.my-4{
+font:size:40px;
+}
+.col-md-3
+{
+display: inline-block;
+margin-left:-4px;
+}
+.carousel-indicators .active {
+background-color: green;
+}
+.col-md-3 img{
+width: 170px;
+height: 200px;
+}
+body .carousel-indicator li{
+background-color: green;
+}
+body .carousel-indicators{
+bottom: 0;
+}
+
+body .carousel-control-prev-icon,
+body .carousel-control-next-icon{
+background-color: green;
+}
+.carousel-control-prev,
+.carousel-control-next{
+top: auto;
+bottom: auto;
+padding-top: 222px;
+}
+body .no-padding{
+padding-left: 0,
+padding-right: 0;
+}
+
+
+
+
+
+{% endblock %}
+{% block body %}
+{% load static %}
+<div class="agri">Agriculture plays important role in the world’s economy. In-country like India it is also a major source of income for most of the population, though Indian farmers still use the traditional way of farming, because of either the lack of knowledge, heavy cost, or because they are unaware of emerging technologies in Agriculture. Technologies like IoT, Machine Learning, and Deep Learning can be used to extract information/data and process it to provide insights about different agricultural parameters (soil, moisture, vegetation, etc.), benefitting farmers in the advisory.
+</div>
+
+
+{% endblock %}
